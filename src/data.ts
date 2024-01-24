@@ -13,16 +13,26 @@ interface Data {
   }[];
 }
 
-enum ReportType {
+export enum ReportType {
   INCOME = 'income',
   EXPENSE = 'expense',
 }
 
-data.report.push({
-  id: 'uuid',
-  source: 'Salary',
-  amount: 191,
-  created_at: new Date(),
-  updated_at: new Date(),
-  type: ReportType.INCOME,
-});
+data.report.push(
+  {
+    id: 'uuid1',
+    source: 'Salary',
+    amount: 191,
+    created_at: new Date(),
+    updated_at: new Date(),
+    type: ReportType.INCOME,
+  },
+  {
+    id: 'uuid2',
+    source: 'Food',
+    amount: 1100,
+    created_at: new Date(),
+    updated_at: new Date(),
+    type: ReportType.EXPENSE,
+  },
+);
